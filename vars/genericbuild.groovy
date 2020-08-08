@@ -1,4 +1,5 @@
-node {
+def call(Map config=[:]) {
+    node {
     stage('SCM') {
 	echo 'Gathering code from version control'
     }
@@ -13,3 +14,5 @@ node {
         echo 'Deploying....'
     }
 }
+}
+
